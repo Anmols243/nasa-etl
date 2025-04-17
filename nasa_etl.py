@@ -2,10 +2,10 @@ import requests
 import pandas as pd
 import json
 from datetime import datetime,  timedelta
-import s3fs
+import os
 
 #NASA API key
-nasa_api_key= "NEsYKQcd4SQYMfXw6X0OQL8K5A9J04HsDR5pKwx8" 
+nasa_api_key= os.getenv("NASA_API_KEY") 
 
 #Dates
 end_date = datetime.today().date()
